@@ -36,7 +36,6 @@ def login():
 
             if login and user.password == hashed_password:
                 return redirect(url_for('download_page'))
-
             return 'Ошибка: Неверный логин или пароль', 401
 
         except Exception as e:
@@ -62,7 +61,6 @@ def download_file(file_type):
 
     if not os.path.exists(file_path):
         return 'Файл не найден', 404
-
     return send_from_directory(os.path.dirname(file_path), filename)
 
 if __name__ == '__main__':
