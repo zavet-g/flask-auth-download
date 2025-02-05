@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачивание файлов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .download-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="download-container">
+        <h2 class="mb-4">Скачивание файлов</h2>
+        <p>Выберите файл для скачивания:</p>
+        <div class="d-grid gap-2">
+            <a href="/download/pdf" class="btn btn-danger">Скачать PDF</a>
+            <a href="/download/xlsx" class="btn btn-success">Скачать Excel</a>
+            <a href="/download/csv" class="btn btn-primary">Скачать CSV</a>
+        </div>
+    </div>
+</body>
+</html>
