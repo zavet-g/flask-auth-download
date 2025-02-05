@@ -1,6 +1,5 @@
 from sqlalchemy import create_engine, Column, Integer, String
 import hashlib
-
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 DATABASE_URI = 'sqlite:///instance/file_downloader.db'

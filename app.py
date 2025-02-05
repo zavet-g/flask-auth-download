@@ -1,9 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
-
 from flask import Flask, request, redirect, render_template, url_for, send_from_directory
-
 import hashlib
-
 import os
 
 
