@@ -20,7 +20,6 @@ def del_admin():
     login = input('Введите логин: ').strip()
     password = input('Введите пароль: ').strip()
     hashed_password = hashlib.sha256(password.encode('utf-8')).hexdigest()
-
     user_to_delete = session.query(Users).filter_by(login=login, password=hashed_password).first()
 
     if user_to_delete:
